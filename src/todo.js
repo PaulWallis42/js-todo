@@ -1,3 +1,7 @@
 function Todo(){
-  this.todos = [];
+  this.items = [];
 }
+
+Todo.prototype.addItem = function (item) {
+  this.items.push(item);
+};
