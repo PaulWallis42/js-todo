@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>JS Todo App</title>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Todo App</title>
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
+  </head>
+  <body>
 
-</head>
+    <div id="container">
 
-<body>
-</body>
+      <form id="main-form">
+        <input type="text" placeholder="Add todo item...">
+        <input type="submit" value="Add Item">
+      </form>
+
+      <ul id="todo"></ul>
+
+      <ul id="completed"></ul>
+
+    </div>
+
+    <script src="src/todo.js"></script>
+    <script src="src/index.js"></script>
+  </body>
 </html>
