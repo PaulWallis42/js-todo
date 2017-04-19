@@ -17,3 +17,8 @@ body {
 #main-form {
   padding-top: 10px;
 }
+
+#completed {
+  list-style-type: none;
+  text-decoration: line-through;
+}
