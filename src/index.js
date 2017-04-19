@@ -45,7 +45,7 @@ window.onload = function(){
       list.appendChild(newLi);
   }
 
-  // remove item from todo list and put in completed list and update view
+  // when item clicked remove from todo list and put in completed list and update view
   var todoList = document.getElementById('todo')
   todoList.addEventListener('click', function(e){
     todo.removeItem(e.path[0].innerText);

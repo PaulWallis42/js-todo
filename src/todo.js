@@ -1,6 +1,6 @@
 function Todo(){
   this.todoItems = [];
-  this.completedItems = [1,2,3];
+  this.completedItems = [];
 }
 
 Todo.prototype.addItem = function(item) {
