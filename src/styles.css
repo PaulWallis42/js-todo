@@ -4,6 +4,16 @@ body {
 
 #container {
   width: 75%;
+  height: 500px;
   background: white;
   margin: auto;
+  text-align: center;
+}
+
+#todo {
+  list-style-type: none;
+}
+
+#main-form {
+  padding-top: 10px;
 }
