@@ -9,9 +9,7 @@ window.onload = function(){
     var list = document.getElementById('todo');
     removeChildren(list);
     todo.todoItems.forEach(function(item){
-      var newLi = document.createElement('li');
-      newLi.innerText = item;
-      list.appendChild(newLi);
+      createChildren(item, list);
     });
   }
 
@@ -20,9 +18,7 @@ window.onload = function(){
     var list = document.getElementById('completed');
     removeChildren(list);
     todo.completedItems.forEach(function(item){
-      var newLi = document.createElement('li');
-      newLi.innerText = item;
-      list.appendChild(newLi);
+      createChildren(item, list);
     });
   }
 
@@ -40,6 +36,13 @@ window.onload = function(){
     while (list.hasChildNodes()){
       list.removeChild(list.firstChild);
     }
+  }
+
+  // create Children
+  function createChildren(item, list){
+      var newLi = document.createElement('li');
+      newLi.innerText = item;
+      list.appendChild(newLi);
   }
 
 
