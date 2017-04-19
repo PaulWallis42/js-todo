@@ -31,7 +31,7 @@ window.onload = function(){
     displayTodos();
   }
 
-  // remove all <li> before outputting to window
+  // remove all <li> before outputting to DOM
   function removeChildren(list){
     while (list.hasChildNodes()){
       list.removeChild(list.firstChild);
@@ -44,6 +44,20 @@ window.onload = function(){
       newLi.innerText = item;
       list.appendChild(newLi);
   }
+
+  // remove item from todo list and put in completed list and update view
+  var todoList = document.getElementById('todo')
+  todoList.addEventListener('click', function(e){
+    todo.removeItem(e.path[0].innerText);
+    displayTodos();
+    displayCompleted();
+  });
+
+
+
+
+
+
 
 
 }
