@@ -1,6 +1,6 @@
-# Pure JavaScript Todo list Application
+# To-do list Application
 
-This simple app allows the user to add new items to a todo list and mark done items as completed.  There is no persistence in this application as the project was purely for practice using JavaScript in the browser so all data will be lost on refreshing the page.
+This simple app allows the user to add new items to a to-do list and mark done items as completed.  There is no persistence in this application as the project was purely for practice using JavaScript in the browser so all data will be lost on refreshing the page.
 
 ![landing page](public/readme.png)
 
@@ -23,4 +23,4 @@ Tested using:
 The app is test driven with Jasmine.  To run the test suite type the following in your command line from the app root directory: 'open jasmine/jasmine-standalone-2.5.2/SpecRunner.html'.  This will open up a window in your browser showing the result of the tests.
 
 ## Using the app
-Simply type in the activity you wish to add to your todo list in the input field provided and click the button to add the activity.  Once you have completed an activity simply navigate your cursor to it and it will change colour.  Now click on the item and it will be transferred to the completed list.
+Simply type in the activity you wish to add to your to-do list in the input field provided and click the button to add the activity.  Once you have completed an activity simply navigate your cursor to it and it will change colour.  Now click on the item and it will be transferred to the completed list.
